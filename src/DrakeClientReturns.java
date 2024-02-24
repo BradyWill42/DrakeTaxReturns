@@ -294,7 +294,7 @@ public class DrakeClientReturns {
                     }
 
                     //This is short - just alt Tabs into Drake Directory file explorer (doesn't need to be long - it's a direct action)
-                    Thread.sleep(150);
+                    Thread.sleep(5000);
 
                     //types in "C" and selects it
                     String desktop = "C";

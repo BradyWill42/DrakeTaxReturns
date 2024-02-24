@@ -1,0 +1,8 @@
+Log created on 02.23.2024_14.22.44
+Using InputDrakePrint.txt as input file.
+
+Successful Drake Prints: 
+Boyle, Elizabeth & Long, Benjamin
+Ferguson, Emily & Pfister, William
+
+Broken Client List: 

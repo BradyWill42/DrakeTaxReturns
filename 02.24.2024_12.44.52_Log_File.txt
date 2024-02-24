@@ -1,0 +1,7 @@
+Log created on 02.24.2024_12.44.52
+Using InputDrakePrint.txt as input file.
+
+Successful Drake Prints: 
+Aiken, Cynthia & Hebert, Elizabeth
+
+Broken Client List: 

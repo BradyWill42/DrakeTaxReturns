@@ -1,0 +1,8 @@
+Log created on 02.22.2024_18.37.22
+Using InputDrakePrint.txt as input file.
+
+Successful Drake Prints: 
+Fillion, Matthew & McGarry, Hilary
+Cavanaugh, William & Cavanaugh-Melgar, Manuel
+
+Broken Client List: 

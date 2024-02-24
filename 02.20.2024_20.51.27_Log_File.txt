@@ -1,0 +1,10 @@
+Log created on 02.20.2024_20.51.27
+Using InputDrakePrint.txt as input file.
+
+Successful Drake Prints: 
+Gu, Eric
+Gu, Zhenhua & Feng, Bo
+Montrella, Michael
+Dahlstrom, Cheryl
+
+Broken Client List: 
