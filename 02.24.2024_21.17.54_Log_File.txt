@@ -1,0 +1,7 @@
+Log created on 02.24.2024_21.17.54
+Using InputDrakePrint.txt as input file.
+
+Successful Drake Prints: 
+Walton, Charles & Rina
+
+Broken Client List: 

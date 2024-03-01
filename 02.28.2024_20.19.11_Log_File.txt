@@ -1,0 +1,7 @@
+Log created on 02.28.2024_20.19.11
+Using InputDrakePrint.txt as input file.
+
+Successful Drake Prints: 
+Bethiel, Randy
+
+Broken Client List: 

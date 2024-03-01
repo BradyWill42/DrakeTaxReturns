@@ -1,0 +1,7 @@
+Log created on 02.29.2024_14.01.45
+Using InputDrakePrint.txt as input file.
+
+Successful Drake Prints: 
+Larson, Anna
+
+Broken Client List: 

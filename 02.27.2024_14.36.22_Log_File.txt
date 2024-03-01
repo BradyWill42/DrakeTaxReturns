@@ -1,0 +1,7 @@
+Log created on 02.27.2024_14.36.22
+Using InputDrakePrint.txt as input file.
+
+Successful Drake Prints: 
+Berkowitz, Heath & Ciccolo-Berkowitz, Cristi
+
+Broken Client List: 

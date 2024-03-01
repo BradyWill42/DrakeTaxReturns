@@ -302,23 +302,23 @@ public class DrakeClientReturns {
                     for (int j = 0; j < deskArray.length; j++){
                         vm.keyPress(deskArray[j]);
                         vm.keyRelease(deskArray[j]);
-                        Thread.sleep(150);
+                        Thread.sleep(3000);  //JJ - increased due to need time to get to C drive - used to be 150
                     }
 
                     //After typing in C to get to the C drive to save the file that will be printed, then WAIT!
-                    Thread.sleep(5000);
+                    Thread.sleep(8000);  //JJ - increased due to need time to get to C drive - used to be 5000
 
                     vm.keyPress(KeyEvent.VK_ENTER);
                     vm.keyRelease(KeyEvent.VK_ENTER);
 
                     //Actually loading the C drive after selecting it
-                    Thread.sleep(8000);
+                    Thread.sleep(15000);  //JJ - increased due to need time to get to C drive - used to be 8000
                     
                     vm.keyPress(KeyEvent.VK_TAB);
                     vm.keyRelease(KeyEvent.VK_TAB);
 
                     //Once in C drive, once you tab in it gives it extra time before getting to "ADRAKEPRINT" directory
-                    Thread.sleep(5000);
+                    Thread.sleep(8000);  //JJ - increased due to need time to get to C drive - used to be 5000
 
                     //types in "GruntWorx" and selects it
                     String drakePrint = "ADRAKEPRINT";
@@ -336,7 +336,7 @@ public class DrakeClientReturns {
                     vm.keyRelease(KeyEvent.VK_ENTER);
 
                     //After typing in "ADRAKEPRINT" to get to that directory to save the file that will be printed, then WAIT to let load!
-                    Thread.sleep(5000);
+                    Thread.sleep(8000);  //JJ - increased due to need time to get to C drive - used to be 5000
 
                     //adds files to ADRAKEPRINT
                     vm.keyPress(KeyEvent.VK_ALT);
@@ -346,12 +346,12 @@ public class DrakeClientReturns {
                     vm.keyRelease(KeyEvent.VK_ALT);
 
                     //After saving in "ADRAKEPRINT", then WAIT to let save!
-                    Thread.sleep(10000);
+                    Thread.sleep(15000);  //JJ - increased due to need time to get to C drive - used to be 150
 
                 }
                 
                 //After all 3 files have been printed and saved, give another 6 seconds just to let the client finish and make sure all is done
-                Thread.sleep(6000);
+                Thread.sleep(9000);  //JJ - increased due to need time to get to C drive - used to be 6000
 
                 vm.keyPress(KeyEvent.VK_ALT);
                 Thread.sleep(100);

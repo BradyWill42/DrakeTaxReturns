@@ -1,0 +1,7 @@
+Log created on 02.29.2024_18.14.57
+Using InputDrakePrint.txt as input file.
+
+Successful Drake Prints: 
+Snow, Collin & Maryann
+
+Broken Client List: 

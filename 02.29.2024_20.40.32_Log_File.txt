@@ -1,0 +1,8 @@
+Log created on 02.29.2024_20.40.32
+Using InputDrakePrint.txt as input file.
+
+Successful Drake Prints: 
+Cohen, Aria
+ILLUSTRATED VERDICT INC
+
+Broken Client List: 

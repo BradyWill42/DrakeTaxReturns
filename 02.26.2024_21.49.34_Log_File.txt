@@ -1,0 +1,7 @@
+Log created on 02.26.2024_21.49.34
+Using InputDrakePrint.txt as input file.
+
+Successful Drake Prints: 
+Inguilizian, Taline
+
+Broken Client List: 

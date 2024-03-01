@@ -1,0 +1,7 @@
+Log created on 02.28.2024_10.26.15
+Using InputDrakePrint.txt as input file.
+
+Successful Drake Prints: 
+MacPherson, Elizabeth
+
+Broken Client List: 

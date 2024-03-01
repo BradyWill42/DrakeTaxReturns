@@ -1,0 +1,9 @@
+Log created on 02.26.2024_16.38.49
+Using InputDrakePrint.txt as input file.
+
+Successful Drake Prints: 
+Buckley, Leslie
+Iannoni, Jason & Jacqueline
+Gosselin, Samuel & Clement, Emilie
+
+Broken Client List: 
