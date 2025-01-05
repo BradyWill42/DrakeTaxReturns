@@ -258,7 +258,7 @@ public class DrakeClientReturns {
                 vm.keyRelease(KeyEvent.VK_CONTROL);
 
                 //waits after printing
-                Thread.sleep(10000);
+                Thread.sleep(18000);
 
                 //JJ - Bypass potential popup that asks you to print form that needs social security number showing (like payment vouchers in Client set)
                 // vm.keyPress(KeyEvent.VK_ALT);
@@ -280,7 +280,7 @@ public class DrakeClientReturns {
                 vm.keyRelease(KeyEvent.VK_ALT);
 
                 //After hitting to print and before opening File Explorer - gives File Explorer time to open
-                Thread.sleep(8000);
+                Thread.sleep(15000);
 
                 //Loops saving  the 3 files that we automatically print in Drake Print explorer (will print Preparer copy as well if no Estimated payments)
                 for(int k = 0; k < 3; k++){
@@ -294,7 +294,7 @@ public class DrakeClientReturns {
                     }
 
                     //This is short - just alt Tabs into Drake Directory file explorer (doesn't need to be long - it's a direct action)
-                    Thread.sleep(5000);
+                    //Thread.sleep(5000);
 
                     //types in "C" and selects it
                     String desktop = "C";
@@ -302,11 +302,11 @@ public class DrakeClientReturns {
                     for (int j = 0; j < deskArray.length; j++){
                         vm.keyPress(deskArray[j]);
                         vm.keyRelease(deskArray[j]);
-                        Thread.sleep(3000);  //JJ - increased due to need time to get to C drive - used to be 150
+                        //Thread.sleep(3000);  //JJ - increased due to need time to get to C drive - used to be 150
                     }
 
                     //After typing in C to get to the C drive to save the file that will be printed, then WAIT!
-                    Thread.sleep(8000);  //JJ - increased due to need time to get to C drive - used to be 5000
+                    //Thread.sleep(10000);  //JJ - increased due to need time to get to C drive - used to be 5000
 
                     vm.keyPress(KeyEvent.VK_ENTER);
                     vm.keyRelease(KeyEvent.VK_ENTER);
@@ -314,11 +314,27 @@ public class DrakeClientReturns {
                     //Actually loading the C drive after selecting it
                     Thread.sleep(15000);  //JJ - increased due to need time to get to C drive - used to be 8000
                     
-                    vm.keyPress(KeyEvent.VK_TAB);
-                    vm.keyRelease(KeyEvent.VK_TAB);
+                    vm.keyPress(KeyEvent.VK_CONTROL);
+                    Thread.sleep(250);
+                    vm.keyPress(KeyEvent.VK_L);
+                    vm.keyRelease(KeyEvent.VK_L);
+                    vm.keyRelease(KeyEvent.VK_CONTROL);
+
+                    Thread.sleep(8000);
+
+                    for(int j = 0; j < 5; j++){
+                        vm.keyPress(KeyEvent.VK_TAB);
+                        vm.keyRelease(KeyEvent.VK_TAB);
+                        Thread.sleep(250);
+                    }
+
+                    
+                    //Changed from Drake 2023, numerous options added, need to reset and make more reliable, added code above.
+                    //vm.keyPress(KeyEvent.VK_TAB);
+                    //vm.keyRelease(KeyEvent.VK_TAB);
 
                     //Once in C drive, once you tab in it gives it extra time before getting to "ADRAKEPRINT" directory
-                    Thread.sleep(8000);  //JJ - increased due to need time to get to C drive - used to be 5000
+                    //Thread.sleep(8000);  //JJ - increased due to need time to get to C drive - used to be 5000
 
                     //types in "GruntWorx" and selects it
                     String drakePrint = "ADRAKEPRINT";
