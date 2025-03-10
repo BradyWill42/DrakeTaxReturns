@@ -14,8 +14,10 @@ import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
 import java.awt.datatransfer.StringSelection;
+import java.awt.datatransfer.Transferable;
 import java.awt.Toolkit;
 import java.awt.datatransfer.Clipboard;
+import java.awt.datatransfer.DataFlavor;
 import java.awt.datatransfer.UnsupportedFlavorException;
 import java.time.format.DateTimeFormatter;  
 import java.time.LocalDateTime;    
@@ -164,14 +166,54 @@ public class DrakeClientReturns {
                 }
 
 
+
                 //Thread.sleep(3000);  JJ - Feb 13th comment out 
 
                 //paste name into returnSearch
+                
+
+                /*
                 vm.keyPress(KeyEvent.VK_CONTROL);
                 Thread.sleep(100);
                 vm.keyPress(KeyEvent.VK_V);
                 vm.keyRelease(KeyEvent.VK_V);
                 vm.keyRelease(KeyEvent.VK_CONTROL);
+                
+                */
+
+                
+                //types in name and selects it
+                Transferable nameString = clipboard.getContents(null);
+                if (nameString != null) {
+                    String newNameString = null;
+                    try {
+                        newNameString = (String) nameString.getTransferData(DataFlavor.stringFlavor);
+                        System.out.println(newNameString);
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                    char[] nameArray = newNameString.toUpperCase().toCharArray();
+
+                    for (int j = 0; j < nameArray.length; j++){
+                        System.out.println(nameArray[i]);
+                        if (nameArray[j] == '&') {
+                            System.out.println("Ampersand Located.");
+                            vm.keyPress(KeyEvent.VK_SHIFT);
+                            vm.keyPress(KeyEvent.VK_7);
+                            vm.keyRelease(KeyEvent.VK_7);
+                            vm.keyRelease(KeyEvent.VK_SHIFT);
+                            continue;
+                        }
+                        int keyCode = (int) nameArray[j];
+                        vm.keyPress(keyCode);
+                        vm.keyRelease(keyCode);                    
+                        //Thread.sleep(1000);  //JJ - increased due to need time to get to C drive - used to be 150
+                    }
+                }
+
+                
+                 
+
 
                 //just waiting after pasting client name to open in Drake
                 Thread.sleep(5000);
@@ -217,33 +259,33 @@ public class DrakeClientReturns {
                 vm.keyRelease(KeyEvent.VK_CONTROL);
 
                 //wait for the SETS tab to open in View mode
-                Thread.sleep(5000);
+                Thread.sleep(8000);
 
                 //close and select first 3 folders
                 vm.keyPress(KeyEvent.VK_UP);
                 vm.keyRelease(KeyEvent.VK_UP);
-                Thread.sleep(100);
+                Thread.sleep(300);
                 vm.keyPress(KeyEvent.VK_LEFT);
                 vm.keyRelease(KeyEvent.VK_LEFT);
-                Thread.sleep(100);
+                Thread.sleep(300);
                 vm.keyPress(KeyEvent.VK_SPACE);
                 vm.keyRelease(KeyEvent.VK_SPACE);
-                Thread.sleep(100);
+                Thread.sleep(300);
                 vm.keyPress(KeyEvent.VK_DOWN);
                 vm.keyRelease(KeyEvent.VK_DOWN);
-                Thread.sleep(100);
+                Thread.sleep(300);
                 vm.keyPress(KeyEvent.VK_LEFT);
                 vm.keyRelease(KeyEvent.VK_LEFT);
-                Thread.sleep(100);
+                Thread.sleep(300);
                 vm.keyPress(KeyEvent.VK_SPACE);
                 vm.keyRelease(KeyEvent.VK_SPACE);
-                Thread.sleep(100);
+                Thread.sleep(300);
                 vm.keyPress(KeyEvent.VK_DOWN);
                 vm.keyRelease(KeyEvent.VK_DOWN);
-                Thread.sleep(100);
+                Thread.sleep(300);
                 vm.keyPress(KeyEvent.VK_LEFT);
                 vm.keyRelease(KeyEvent.VK_LEFT);
-                Thread.sleep(100);
+                Thread.sleep(300);
                 vm.keyPress(KeyEvent.VK_SPACE);
                 vm.keyRelease(KeyEvent.VK_SPACE);
 
@@ -346,7 +388,12 @@ public class DrakeClientReturns {
                     }
         
                     //This is short - just alt Tabs into Drake Directory file explorer (doesn't need to be long - it's a direct action)
-                    Thread.sleep(150);
+                    Thread.sleep(1000);
+
+                    vm.keyPress(KeyEvent.VK_ENTER);
+                    vm.keyRelease(KeyEvent.VK_ENTER);
+
+                    Thread.sleep(100);
 
                     vm.keyPress(KeyEvent.VK_ENTER);
                     vm.keyRelease(KeyEvent.VK_ENTER);
