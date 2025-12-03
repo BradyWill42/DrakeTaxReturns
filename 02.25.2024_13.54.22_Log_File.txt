@@ -1,7 +1,0 @@
-Log created on 02.25.2024_13.54.22
-Using InputDrakePrint.txt as input file.
-
-Successful Drake Prints: 
-
-Broken Client List: 
-Gu, Zhenhua & Feng, Bo

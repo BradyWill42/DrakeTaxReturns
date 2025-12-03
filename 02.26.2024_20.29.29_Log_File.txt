@@ -1,8 +1,0 @@
-Log created on 02.26.2024_20.29.29
-Using InputDrakePrint.txt as input file.
-
-Successful Drake Prints: 
-McCarron, Terrence & Susan
-Riley, Ceridwen
-
-Broken Client List: 

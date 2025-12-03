@@ -1,8 +1,0 @@
-Log created on 02.22.2024_15.07.35
-Using InputDrakePrint.txt as input file.
-
-Successful Drake Prints: 
-Phelps, Amanda
-Simes, William & Mary
-
-Broken Client List: 

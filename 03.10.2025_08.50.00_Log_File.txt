@@ -1,7 +1,0 @@
-Log created on 03.10.2025_08.50.00
-Using InputDrakePrint.txt as input file.
-
-Successful Drake Prints: 
-
-Broken Client List: 
-Single, Dummy

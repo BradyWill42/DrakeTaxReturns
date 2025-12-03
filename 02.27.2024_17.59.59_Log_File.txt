@@ -1,7 +1,0 @@
-Log created on 02.27.2024_17.59.59
-Using InputDrakePrint.txt as input file.
-
-Successful Drake Prints: 
-
-Broken Client List: 
-Grooms, Shakyia

@@ -1,7 +1,0 @@
-Log created on 02.29.2024_10.22.05
-Using InputDrakePrint.txt as input file.
-
-Successful Drake Prints: 
-Sosnay, Patrick
-
-Broken Client List: 

@@ -1,7 +1,0 @@
-Log created on 02.23.2024_16.56.44
-Using InputDrakePrint.txt as input file.
-
-Successful Drake Prints: 
-Long, Elizabeth & Benjamin
-
-Broken Client List: 

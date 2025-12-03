@@ -1,9 +1,0 @@
-Log created on 02.22.2024_20.15.59
-Using InputDrakePrint.txt as input file.
-
-Successful Drake Prints: 
-DeGregorio, Stephen & Chieri
-SCTA CORPORATION
-Pedersen, Sarah
-
-Broken Client List: 
