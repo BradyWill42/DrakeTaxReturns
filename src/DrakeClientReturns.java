@@ -429,7 +429,7 @@ public class DrakeClientReturns {
 
                 Thread.sleep(3000);
                 
-                File clientsZDrive = new File("Z:\\" + client.getName() + "\\Firm docs shared with client\\" + year);
+                File clientsZDrive = new File("Z:" + File.separator + client.getName() + File.separator + "Firm docs shared with client" + File.separator + year + File.separator);
 
                 File [] files = aDrakeFile.listFiles();
                 for (int j = 0; j < files.length; j++){
