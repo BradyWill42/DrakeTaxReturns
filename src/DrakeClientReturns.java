@@ -226,6 +226,7 @@ public class DrakeClientReturns {
                 Thread.sleep(5000);
 
                 //bypass potential multiple client popup
+                //essentially a rare occurence for when its a married couple filing jointly
                 vm.keyPress(KeyEvent.VK_ALT);
                 vm.keyPress(KeyEvent.VK_O);
                 vm.keyRelease(KeyEvent.VK_O);
