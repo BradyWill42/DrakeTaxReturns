@@ -225,6 +225,12 @@ public class DrakeClientReturns {
                 //waiting to open client file in Drake
                 Thread.sleep(5000);
 
+                //bypass potential multiple client popup
+                vm.keyPress(KeyEvent.VK_ALT);
+                vm.keyPress(KeyEvent.VK_O);
+                vm.keyRelease(KeyEvent.VK_O);
+                vm.keyRelease(KeyEvent.VK_ALT);
+
                 //bypass potential popup notes, bypasses 2
                 vm.keyPress(KeyEvent.VK_ALT);
                 //waiting to bypass the initial "NOTE" POPUP that comes up in Drake if the client has a NOTE written in their file
