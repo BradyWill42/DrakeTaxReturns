@@ -193,9 +193,9 @@ public class DrakeClientReturns {
                         e.printStackTrace();
                     }
                     char[] nameArray = newNameString.toUpperCase().toCharArray();
-
+                    System.out.println();
                     for (int j = 0; j < nameArray.length; j++){
-                        System.out.println(nameArray[i]);
+                        System.out.print(nameArray[i]);
                         if (nameArray[j] == '&') {
                             System.out.println("Ampersand Located.");
                             vm.keyPress(KeyEvent.VK_SHIFT);
@@ -209,6 +209,7 @@ public class DrakeClientReturns {
                         vm.keyRelease(keyCode);                    
                         //Thread.sleep(1000);  //JJ - increased due to need time to get to C drive - used to be 150
                     }
+                    System.out.println();
                 }
 
                 
