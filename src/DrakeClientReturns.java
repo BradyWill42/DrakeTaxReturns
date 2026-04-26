@@ -329,6 +329,14 @@ public class DrakeClientReturns {
                 vm.keyRelease(KeyEvent.VK_P);
                 vm.keyRelease(KeyEvent.VK_ALT);
 
+                //potential state confirmation popup
+                vm.keyPress(KeyEvent.VK_ALT);
+                Thread.sleep(100);
+                vm.keyPress(KeyEvent.VK_Y);
+                vm.keyRelease(KeyEvent.VK_Y);
+                vm.keyRelease(KeyEvent.VK_ALT);
+
+
                 //After hitting to print and before opening File Explorer - gives File Explorer time to open
                 Thread.sleep(15000);
 
