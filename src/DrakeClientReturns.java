@@ -424,15 +424,20 @@ public class DrakeClientReturns {
                 //After all 3 files have been printed and saved, give another 6 seconds just to let the client finish and make sure all is done
                 Thread.sleep(9000);  //JJ - increased due to need time to get to C drive - used to be 6000
 
-                vm.keyPress(KeyEvent.VK_ALT);
-                Thread.sleep(100);
-                vm.keyPress(KeyEvent.VK_F4);
-                vm.keyRelease(KeyEvent.VK_F4);
-                vm.keyRelease(KeyEvent.VK_ALT);
+
+                for (int l = 0; l < 5; l++) {
+                    vm.keyPress(KeyEvent.VK_ESCAPE);
+                    Thread.sleep(10);
+                    vm.keyRelease(KeyEvent.VK_ESCAPE);
+                    Thread.sleep(250);
+                }
                 
-                Thread.sleep(3000);
+                
+                Thread.sleep(1000);
 
                 vm.keyPress(KeyEvent.VK_ALT);
+                vm.keyPress(KeyEvent.VK_N);
+                vm.keyRelease(KeyEvent.VK_N);
                 vm.keyRelease(KeyEvent.VK_ALT);
 
                 Thread.sleep(3000);
