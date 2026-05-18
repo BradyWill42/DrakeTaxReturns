@@ -456,7 +456,7 @@ public class DrakeClientReturns {
                 for (int j = 0; j < files.length; j++){
                     if (files[j].isFile() && !files[j].toString().contains("Preparer")){ //this line weeds out other directories/folders and makes sure it isn't the preparer file
                         System.out.println(files[j].toPath());
-                        System.out.println(Paths.get(clientsZDrive.toString() + files[j].getName()));
+                        System.out.println(Paths.get(clientsZDrive.toString() + File.separator + files[j].getName()));
                         Path temp = null;
                         try {
                             temp = Files.copy(files[j].toPath(), Paths.get(clientsZDrive.toString() + File.separator + files[j].getName()), StandardCopyOption.REPLACE_EXISTING);
